@@ -10,3 +10,6 @@ if __name__ == "__main__":
 
     pyperclip.copy(transcript.text)
     print("文字起こし結果がクリップボードにコピーされました。")
+    
+    # 完了通知音を再生（Hero、音量50%）
+    os.system('afplay -v 0.1 /System/Library/Sounds/Blow.aiff')

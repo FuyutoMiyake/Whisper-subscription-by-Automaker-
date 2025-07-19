@@ -14,7 +14,7 @@
           },
           "to": [
             {
-              "shell_command": "cd /Users/fm/Downloads/whisper-launcher-main && bash hack/record_and_transcribe.sh"
+              "shell_command": "cd /Users/fm/Downloads/whisper-launcher-main && bash whisper_controller.sh"
             }
           ]
         }
