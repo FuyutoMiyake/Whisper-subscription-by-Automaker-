@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+  default:
+    silent: true
+    cmds:
+      - task --list-all
+
+  record:
+    desc: "録音"
+    cmds:
+      - sox -d -c 1 -r 16000 -b 16 audio.wav
+
+  transcribe:
+    desc: "音声ファイルを文字起こし"
+    cmds:
+      - bash hack/run.sh uv run main.py

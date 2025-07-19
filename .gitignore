@@ -1,0 +1,6 @@
+.venv
+run.sh
+*.wav
+*.app
+*.log
+record_and_transcribe.sh

@@ -1,0 +1,24 @@
+{
+  "title": "Whisper Launcher - Cmd+Space",
+  "rules": [
+    {
+      "description": "Cmd+Space to run Whisper transcription",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "cd /Users/fm/Downloads/whisper-launcher-main && bash hack/record_and_transcribe.sh"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
